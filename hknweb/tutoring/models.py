@@ -65,3 +65,5 @@ class Slot(models.Model):
             full_name=Concat("first_name", Value(" "), "last_name")
         ).values_list("full_name", flat=True)
         return ", ".join(tutors)
+    
+#make tutors class with prefered classes, use profiles code stuff, check out filter by classes, make the calender display 5 days instead of 1
